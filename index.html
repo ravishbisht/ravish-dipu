@@ -5,33 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <title>i love you baby</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="envelope-wrapper">
-            <div class="envelope">
-                <div class="letter">
-                    <div class="text">
-                        <strong style="font-family:sans-serif; color:rgb(255, 47, 0); display:block; text-align:center;">💕Ravish❤️Dipu💕</strong>
-                        <p style="font-family: cursive; color:purple; font-weight: bold;">
-                            i miss u babyyy. I love to hear you. I want to know u more. I love when you share what's
-                            inside your mind. love u bohot sara 😘😘😘😘😘😘😘😘😘😘😘😘😘😘 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="heart"></div>
+        <h1 class="hiDipu"><span class="heartAnim">❤️</span>𝓗𝓲 𝓑𝓪𝓫𝔂<span class="heartAnim">❤️</span></h1>
+        <img src="love.jpg" class="loveImg" alt="❤️">
+        <p>𝔹𝕒𝕓𝕪𝕪𝕪𝕪 𝕚 𝕨𝕒𝕟𝕥 𝕥𝕠 𝕘𝕚𝕧𝕖 𝕪𝕠𝕦 𝕤𝕠𝕠𝕠𝕠 𝕞𝕒𝕟𝕪 𝕜𝕚𝕤𝕤𝕖𝕤
+            😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘😘</p>
+        <h2 class="baby">𝔹𝕒𝕓𝕪𝕪𝕪𝕪😘</h2>
+
+        <div class="input">
+            <label for="nickname">𝐓𝐲𝐩𝐞 𝐚 𝐧𝐢𝐜𝐤 𝐧𝐚𝐦𝐞 𝐟𝐨𝐫 𝐲𝐨𝐮𝐫 𝐛𝐚𝐛𝐲?</label>
+            <input type="text" id="nickname">
+            <button type="button" onclick="addMessage()" id="nickNameBtn">Submit</button>
         </div>
+
+        <div class="loveMsg hide">
+            <h3 class="hername">Ravish</h3>
+            <h3 class="heartEmoji">❤️</h3>
+            <h3 class="myname">Dipu</h3>
+            <p class="loveParagraph">𝐁𝐚𝐛𝐲 𝐲𝐨𝐮 𝐝𝐨𝐧'𝐭 𝐡𝐚𝐯𝐞 𝐭𝐨 𝐦𝐢𝐬𝐬 𝐦𝐞 𝐛𝐞𝐜𝐚𝐮𝐬𝐞 𝐢 𝐚𝐦
+                𝐚𝐥𝐰𝐚𝐲𝐬 𝐰𝐢𝐭𝐡 𝐲𝐨𝐮. 𝐈 𝐰𝐢𝐥𝐥 𝐛𝐞𝐜𝐨𝐦𝐞 𝐭𝐡𝐞 𝐫𝐞𝐚𝐬𝐨𝐧 𝐨𝐟 𝐲𝐨𝐮𝐫
+                𝐜𝐨𝐧𝐟𝐢𝐝𝐞𝐧𝐜𝐞 𝐚𝐧𝐝 𝐬𝐭𝐚𝐧𝐝 𝐛𝐲 𝐲𝐨𝐮𝐫 𝐬𝐢𝐝𝐞. 𝐋𝐞𝐭'𝐬 𝐬𝐭𝐫𝐮𝐠𝐠𝐥𝐞 𝐚
+                𝐥𝐢𝐭𝐭𝐥𝐞 𝐦𝐨𝐫𝐞. 𝐁𝐞 𝐩𝐚𝐭𝐢𝐞𝐧𝐜𝐞 𝐚𝐧𝐝 𝐬𝐭𝐚𝐲 𝐟𝐨𝐜𝐮𝐬𝐞𝐝 𝐨𝐧 𝐭𝐡𝐞 𝐭𝐚𝐫𝐠𝐞𝐭❤️
+            </p>
+        </div>
+        <p class="dipu">@𝓭𝓲𝓹𝓾</p>
     </div>
-    <script>
-        const envelope = document.querySelector('.envelope-wrapper');
-        envelope.addEventListener('click', () => {
-            envelope.classList.toggle('flap');
-        });
-    </script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
